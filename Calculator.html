@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #heading h1 {
+            color: teal;
+            font-size: 45px;
+            text-align: center;
+
+        }
+
+        #calBody {
+            width: 25%;
+            height: auto;
+            border: px solid black;
+            margin: auto;
+            box-shadow: 2px 2px 10px 0px rgb(7, 7, 7);
+            border-radius: 10px;
+            padding: 50px 0 50px 0;
+
+        }
+
+        #calBody>div {
+            width: 80%;
+            height: 50px;
+            border: px solid red;
+            margin: auto;
+            margin-top: 10px;
+            display: flex;
+
+
+        }
+
+        #calBody :nth-child(1) {
+            box-shadow: 2px 2px 10px 0px rgb(7, 7, 7);
+            border-radius: 10px;
+        }
+
+        #calBody :nth-child(2) div,
+        #calBody :nth-child(3) div,
+        #calBody :nth-child(4) div,
+        #calBody :nth-child(5) div {
+            width: 22%;
+            text-align: center;
+            border: px solid blue;
+            padding: 15px 0 12px 0;
+            margin: auto;
+            box-shadow: 2px 2px 9px 0px rgb(7, 7, 7);
+            border-radius: 10px;
+            font-size: x-large;
+
+        }
+
+        #calBody :nth-child(2)> :nth-child(4),
+        #calBody :nth-child(3)> :nth-child(4),
+        #calBody :nth-child(4)> :nth-child(4),
+        #calBody :nth-child(5)> :nth-child(4),
+        #calBody :nth-child(5)> :nth-child(3) {
+            background-color: black;
+            color: white;
+        }
+
+        #calBody :nth-child(5)> :nth-child(1) {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="heading">
+        <h1>Masai Calculator</h1>
+    </div>
+    <div id="calBody">
+        <div></div>
+        <div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+</div>
+        </div>
+        <div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+        </div>
+        <div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>*</div>
+        </div>
+        <div>
+            <div>C</div>
+            <div>0</div>
+            <div>=</div>
+            <div>/</div>
+        </div>
+    </div>
+</body>
+
+</html>
